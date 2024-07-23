@@ -1,6 +1,7 @@
 const express= require('express')
 const app= express()
-const dbConnect= require('./dbConnect')
+// import './dbConnect'
+// const dbConnect= require('./dbConnect')
 const port = 5000
 
 app.get('/',(req,res)=>res.send('hello world'));
