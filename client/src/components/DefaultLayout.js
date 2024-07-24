@@ -1,5 +1,5 @@
 import React from "react";
-import './../resources/authentication.css'
+import './../resources/DefaultLayout.css'
 
 
 function DefaultLayout(props){
