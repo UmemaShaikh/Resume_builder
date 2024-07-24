@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
+import {Link} from 'react-router-dom'
 import '../resources/authentication.css'
 
 function Register() {
@@ -7,20 +8,26 @@ function Register() {
     console.log(values);
   };
   return (
-    <div classname="auth-parent">
+    <div className="auth-parent">
       <Form layout="vertical" onFinish={onFinish}>
-        <Form.Item name="username" label="username">
+        <h1>Register</h1>
+        <hr />
+        <Form.Item name="username" label="Username">
           <Input />
         </Form.Item>
-        <Form.Item name="password" label="password">
+        <Form.Item name="password" label="Password">
           <Input />
         </Form.Item>
-        <Form.Item name="cpassword" label="confirm password">
+        <Form.Item name="cpassword" label="Confirm Password">
           <Input />
         </Form.Item>
-        <Button type="primary" htmlType="submit">
+         <div className="d-flex align-items-center justify-content-space-between">
+            <Link to="/register">Click here to register</Link>
+         <Button type="primary" htmlType="submit">
           REGISTER
         </Button>
+         </div>
+       
       </Form>
     </div>
   );
