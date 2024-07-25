@@ -1,7 +1,8 @@
 import React from "react";
 import { Button, Form, Input } from "antd";
-import {Link} from 'react-router-dom'
 import '../resources/authentication.css'
+import {Link} from 'react-router-dom'
+
 
 function Register() {
   const onFinish = (values) => {
@@ -18,8 +19,8 @@ function Register() {
         <Form.Item name="password" label="Password">
           <Input />
         </Form.Item>
-        <div className="d-flex align-items-center justify-content-space-between">
-            <Link to="/login">Click here to Login</Link>
+        <div className="d-flex align-items-center justify-content-between"> 
+         <Link to='/register'>Click here to Register</Link>
          <Button type="primary" htmlType="submit">
           Login
         </Button>
