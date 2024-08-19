@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@500&display=swap');
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+
+}
+@keyframes hide-caret {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+}
+
+.typing {
+  font-family: "Montserrat", !important;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #9e4ceb;
+  width: 0;
+  animation: typing 4s steps(40, end) forwards,
+             blink-caret 0.75s step-end infinite,
+             hide-caret 0s step-end forwards 4s;
+}
+
+.welcome-message h2 {
+  font-size: 30px;
+}
+
+.welcome-message {
+  color: white;
+  padding: 20px;
+  margin:20px auto;
+  max-width: 500px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

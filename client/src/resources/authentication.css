@@ -1,17 +1,58 @@
-.auth-parent{
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.auth-parent {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-image: linear-gradient(
+    to right top,
+    #cf94e0,
+    #b788e3,
+    #987ee6,
+    #6d76e9,
+    #1270eb
+  );
 }
-.auth-parent h1{
-    font-size:22px;
-    font-weight: bold;
-
+.auth-parent h1 {
+  font-size: 22px;
+  font-weight: bold;
 }
-.auth-parent form{
-  width:400px;
+.auth-parent form {
+  width: 350px;
   box-shadow: 0 0 5px grey;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background-color: white !important;
+}
+.auth-parent button {
+  background-image: linear-gradient(
+    to right top,
+    #cf94e0,
+    #b788e3,
+    #987ee6,
+    #6d76e9,
+    #1270eb
+  );
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.auth-parent button:hover {
+  background-image: linear-gradient(
+    to right top,
+    #cf94e0,
+    #b788e3,
+    #987ee6,
+    #6d76e9,
+    #1270eb
+  ) !important;
+}
+
+.custom-link {
+  color: #7f0ee8 !important;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
 }

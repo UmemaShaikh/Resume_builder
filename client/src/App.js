@@ -1,12 +1,11 @@
-// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-// import {Button} from 'antd';
-import {BrowserRouter , Routes, Route}from 'react-router-dom'
+import {BrowserRouter , Routes, Route, Navigate}from 'react-router-dom'
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Home from './pages/Home';
-
+import Profile from './pages/profile';
+import Templates from './pages/templates';
 
 
 
@@ -16,7 +15,10 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-           <Route path='/' element={<Home/>}/>
+           <Route path='/' element={<ProtectedRoutes><Home /></ProtectedRoutes>} />
+           <Route path='/home' element={<ProtectedRoutes><Home/></ProtectedRoutes>}/>
+           <Route path='/profile' element={<ProtectedRoutes><Profile/></ProtectedRoutes>}/>
+           <Route path='/templates/:id' element={<ProtectedRoutes><Templates/></ProtectedRoutes>}/>
            <Route path='/login' element={<Login/>}/>
            <Route path='/register' element={<Register/>}/>
            
@@ -28,3 +30,13 @@ function App() {
 }
 
 export default App;
+
+export function ProtectedRoutes(props){
+  if(localStorage.getItem("shaikhresume-user")){
+    return props.children
+  }else{
+    return <Navigate to ="/login" />
+  }
+   
+
+}

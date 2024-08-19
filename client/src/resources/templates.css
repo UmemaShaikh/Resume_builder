@@ -1,0 +1,140 @@
+/* homepage template styling */
+.home .template{
+    margin: 20px;
+    box-shadow: 0 0 3px gray;  
+    padding: 20px;
+    position: relative;
+}
+.home .template .text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    opacity:0;
+}
+.home .template .text:hover{
+    background-color: black;
+    opacity: 0.8;
+    color: white !important;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.home .template button{
+    background-color: white !important;
+    color:black !important;
+    font-size: 20px !important; 
+    padding: 0 20px;
+
+}
+
+.backbtn{
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+
+/* template1 and template 2 styling */
+.template1-parent{
+    padding: 30px !important;
+}
+.template1-parent h1,.template2-parent h1{
+   font-size: 35px !important;
+
+}
+.template1-parent p, .template2-parent p{
+    padding:0 !important;
+    margin:0 !important;
+    font-size: 18px;
+}    
+.template1-parent h3{
+    font-size: 25px;
+}
+ .template1-parent h6{
+    font-size: 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width:250px
+}
+.template img {
+    height: 400px !important;
+    width: 100%;
+    /* object-fit:contain;  */
+}
+
+
+/* Template2 styling */
+.template2-parent h6{
+    font-size: 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.template2-parent{
+    margin: 25px;
+}
+.template2-parent h3{
+    font-size: 20px;
+    background-color:gray;
+    padding:5px;
+}
+
+/* TEMPLATE 3 STYLES  */
+
+.template3-parent{
+    padding: 30px !important;
+    font-family: Lato;
+}
+
+.template3-parent h6{ 
+    font-size: 18px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+.template3-parent h1{
+    font-size:25px;
+    color:red;
+}
+
+.template3-parent h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.template3-parent p{
+    padding:0 !important;
+    margin:0 !important;
+    font-size: 20px;
+}
+
+.template4-parent{
+    padding: 30px !important;
+
+}
+.template-header p{
+    margin:0;
+}
+
+.template4-parent .projects p,b{
+    margin:0;
+
+}
+/* Template 5 */
+.template5-parent{
+    padding: 30px !important;
+    font-family:'Times New Roman';
+
+}
+.template5-parent h3{
+   color: #20349F;
+} 
+
+.template5-parent p{
+    margin: 0;
+}
